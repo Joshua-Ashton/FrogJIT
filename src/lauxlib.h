@@ -128,6 +128,8 @@ LUALIB_API lua_Integer (luaL_len) (lua_State *L, int idx);
 #define luaL_newlib(L, l)	(luaL_newlibtable(L, l), luaL_setfuncs(L, l, 0))
 
 /* From Lua 5.4 */
+#define luaL_argexpected(L,cond,arg,tname)	\
+		((void)((cond) || luaL_typerror(L, (arg), (tname))))
 #define luaL_typeerror(L,n,t)	luaL_typerror(L, (n), (t))
 
 /*
