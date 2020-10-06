@@ -178,6 +178,7 @@ ERRDEF(FFI_CBACKOV,	"too many callbacks")
 ERRDEF(FFI_NYIPACKBIT,	"NYI: packed bit fields")
 ERRDEF(FFI_NYICALL,	"NYI: cannot call this C function (yet)")
 #endif
+ERRDEF(NEVER_ENDING_COMMENT,	"c-style comment reaches end of file")
 
 #undef ERRDEF
 
